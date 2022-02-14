@@ -13,9 +13,9 @@ const ComicCard = ({ comicInfo }) => {
   const getImage = () => {
     let imageLink =
       "https://unnimedios.com.mx/wp-content/uploads/2021/11/Image-Not-Available.png";
-    if (comicInfo.images.length !== 0) {
+    if (comicInfo?.images.length !== 0) {
       imageLink =
-        comicInfo.images[0].path + "." + comicInfo.images[0].extension;
+        comicInfo?.images[0].path + "." + comicInfo?.images[0].extension;
     }
     return imageLink;
   };
