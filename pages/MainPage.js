@@ -42,7 +42,7 @@ const MainPage = () => {
     const HASH = "fe011abff2ca533eb29fff528cc613d9";
     setLoading(true);
     try {
-      let res = await axios.get(`http://gateway.marvel.com/v1/public/comics`, {
+      let res = await axios.get(`https://gateway.marvel.com/v1/public/comics`, {
         params: {
           ...(input ? { titleStartsWith: input } : {}),
           ...(radioValue ? { characters: radioValue } : {}),
